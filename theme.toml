@@ -1,0 +1,13 @@
+name = "Vex"
+license = "MIT"
+licenselink = "https://github.com/ssiyad/vex/blob/master/LICENSE"
+description = ""
+homepage = "https://ssiyad.com/"
+tags = []
+features = []
+min_version = "0.41.0"
+
+[author]
+  name = "Sabu Siyad"
+  homepage = "https://ssiyad.com"
+

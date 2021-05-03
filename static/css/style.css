@@ -1,0 +1,52 @@
+* {
+  font-family: "Fira Code", monospace;
+  --fg-title: #f00;
+  --fg-a-one: #101010;
+  --fg-a-two: #202020;
+  --fg-a-three: #484848;
+}
+
+@media (prefers-color-scheme: dark) {
+  * {
+    background-color: #202020;
+    color: darkgray;
+    --fg-a-one: silver;
+    --fg-a-two: lightgray;
+    --fg-a-three: whitesmoke;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: var(--fg-a-one);
+}
+
+a:visited {
+  color: var(--fg-a-two);
+}
+
+a:hover {
+  color: var(--fg-a-three);
+}
+
+.title {
+  color: var(--fg-title);
+  font-size: 4rem;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: auto;
+}
+
+.center-element {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center-text {
+  text-align: center;
+}

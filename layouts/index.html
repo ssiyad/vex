@@ -1,0 +1,16 @@
+{{ partial "head.html" }}
+
+<div class="container center-element center-text">
+  <h1>
+    <div class="title">{{ .Site.Params.title }}</div>
+  </h1>
+  <div class="container center-text">
+    {{ $items := (sub (len .Site.Params.home) 1) }}
+    {{ range first $items .Site.Params.home }}
+    <a href={{ index . 1 }}>{{ index . 0 }}</a> &middot;
+    {{ end }}
+    {{ with index .Site.Params.home $items }}
+    <a href={{ index . 1 }}>{{ index . 0 }}</a>
+    {{ end }}
+  </div>
+</div>
