@@ -110,6 +110,17 @@ body {
   margin-left: 160px;
 }
 
+/* .list-title {
+} */
+
+.list-item {
+  margin-bottom: 2rem;
+}
+
+.list-title {
+  font-size: 1.5rem;
+}
+
 .spacer {
   flex: 1
 }
