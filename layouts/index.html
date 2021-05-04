@@ -1,5 +1,4 @@
-{{ partial "head.html" . }}
-
+{{ define "main" }}
 <div class="container center-element center-text">
   <h1>
     <div class="title">{{ .Site.Params.title }}</div>
@@ -8,3 +7,4 @@
     {{ partial "nav.html" . }}
   </div>
 </div>
+{{ end }}

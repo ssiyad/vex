@@ -132,6 +132,31 @@ ol li::marker {
   color: var(--fg-title);
 }
 
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+table thead tr th {
+    background-color: var(--bg-code);
+    color: var(--fg-title);
+    text-align: center;
+    font-weight: normal;
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+}
+
+table tbody tr {
+    border-bottom: 1px solid var(--fg-sub);
+}
+
+table tbody tr:last-of-type {
+    border-bottom: 1px solid var(--fg-title);
+}
+
 .title {
   color: var(--fg-title);
   font-size: 4rem;
