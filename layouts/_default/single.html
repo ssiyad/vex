@@ -1,0 +1,31 @@
+{{ partial "head.html" }}
+
+<body>
+  <div class="sidebar">
+    <a href="/">
+      <div class="title center-element">
+        {{ .Site.Params.title }}
+      </div>
+    </a>
+  </div>
+  <div class="page-main">
+    <br />
+    <div class="container">
+      {{partial "nav.html" . }}
+    </div>
+    <br /><br />
+    <div class="title title-post">
+      {{ .Title }}
+    </div>
+    <br />
+    <div class="title-sub">
+      {{ .Date.Format "2006-01-02" }}
+    </div>
+    <br />
+    <br />
+    {{ .Content }}
+    <hr />
+  </div>
+  <div class="spacer"></div>
+  {{partial "footer.html" . }}
+</body>

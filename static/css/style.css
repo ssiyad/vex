@@ -1,18 +1,24 @@
 * {
   font-family: "Fira Code", monospace;
   --fg-title: #f00;
+  --fg-sub: #606060;
   --fg-a-one: #101010;
   --fg-a-two: #202020;
   --fg-a-three: #484848;
+  --fg-code: #006600;
+  --bg-code: gainsboro;
 }
 
 @media (prefers-color-scheme: dark) {
   * {
     background-color: #202020;
-    color: darkgray;
+    color: #B8B8B8;
+    --fg-sub: gray;
     --fg-a-one: silver;
     --fg-a-two: lightgray;
     --fg-a-three: whitesmoke;
+    --fg-code: #00FF99;
+    --bg-code: #181818;
   }
 }
 
@@ -29,9 +35,47 @@ a:hover {
   color: var(--fg-a-three);
 }
 
+pre, code {
+  color: var(--fg-code);
+  background-color: var(--bg-code);
+}
+
+pre {
+  margin: 10px;
+  padding: 10px;
+}
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  margin-left: 160px;
+  color: var(--fg-sub);
+}
+
+hr {
+  width: 25%;
+  border: 1px solid var(--fg-title);
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 .title {
   color: var(--fg-title);
   font-size: 4rem;
+  font-weight: bold;
+}
+
+.title-post {
+  font-size: 2rem;
+}
+
+.title-sub {
+  color: var(--fg-sub);
 }
 
 .container {
@@ -50,3 +94,23 @@ a:hover {
 .center-text {
   text-align: center;
 }
+
+.sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+}
+
+.page-main {
+  max-width: 50%;
+  margin-left: 160px;
+}
+
+.spacer {
+  flex: 1
+}
+
