@@ -86,6 +86,7 @@ figcaption {
 pre, code {
   color: var(--fg-code);
   background-color: var(--bg-code);
+  overflow: scroll;
 }
 
 pre {
