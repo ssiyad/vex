@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Fira Code";
+  src: url("../fonts/FiraCode-Regular.ttf");
+}
+@font-face {
+  font-family: "Fira Code";
+  src: url("../fonts/FiraCode-Bold.ttf");
+  font-weight: bold;
+}
+
 * {
   font-family: "Fira Code", monospace;
   --fg-title: #f00;
