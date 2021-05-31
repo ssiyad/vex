@@ -1,0 +1,19 @@
+{{ define "main" }}
+<div class="center-element">
+    <div class="container">
+        <div class="card">
+            <div class="page-head">
+                <a href="/">
+                    <div class="title">
+                        {{ .Site.Params.title }}
+                    </div>
+                </a>
+                <br />
+                {{ partial "nav.html" . }}
+            </div>
+            <br />
+            {{ .Content }}
+        </div>
+    </div>
+</div>
+{{ end }}

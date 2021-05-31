@@ -82,6 +82,7 @@ p {
 
 p a {
   text-decoration: underline;
+  background-color: inherit;
 }
 
 img {
@@ -221,6 +222,26 @@ table tbody tr:last-of-type {
 
 .list-title {
   font-size: 1.2rem;
+}
+
+.card p {
+  color: var(--fg-sub);
+  border: 2px solid var(--fg-title);
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.card p:hover {
+  background-color: var(--bg-code);
+}
+
+.card p a {
+  text-decoration: none;
+}
+
+.card .page-head {
+  text-align: center;
 }
 
 .spacer {
