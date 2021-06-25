@@ -1,15 +1,27 @@
 @font-face {
   font-family: "Fira Code";
-  src: url("../fonts/FiraCode-Regular.ttf");
+  src: url("../fonts/FiraCode/FiraCode-Regular.ttf");
 }
+
 @font-face {
   font-family: "Fira Code";
-  src: url("../fonts/FiraCode-Bold.ttf");
+  src: url("../fonts/FiraCode/FiraCode-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "GoogleSans";
+  src: url("../fonts/GoogleSans/GoogleSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "GoogleSans";
+  src: url("../fonts/GoogleSans/GoogleSans-Bold.ttf");
   font-weight: bold;
 }
 
 * {
-  font-family: "Fira Code", monospace;
+  font-family: "GoogleSans", sans-serif;
   --fg-title: #f00;
   --fg-sub: #606060;
   --fg-a-one: #101010;
@@ -28,7 +40,7 @@
 
 @media (prefers-color-scheme: dark) {
   * {
-    background-color: #202020;
+    background-color: #212121;
     color: #B8B8B8;
     --fg-sub: gray;
     --fg-a-one: silver;
@@ -95,6 +107,7 @@ figcaption {
 }
 
 pre, code {
+  font-family: "Fira Code";
   color: var(--fg-code);
   background-color: var(--bg-code);
   overflow: scroll;
