@@ -28,6 +28,7 @@
   --fg-a-two: #202020;
   --fg-a-three: #484848;
   --fg-code: #006600;
+  --fg-title-mini: #331D56;
   --bg-code: gainsboro;
   --menu-display: inline;
   --sidebar-height: 100%;
@@ -47,6 +48,7 @@
     --fg-a-two: lightgray;
     --fg-a-three: whitesmoke;
     --fg-code: #00FF99;
+    --fg-title-mini: #DCF5FF;
     --bg-code: #181818;
   }
 }
@@ -180,6 +182,11 @@ table tbody tr {
 
 table tbody tr:last-of-type {
     border-bottom: 1px solid var(--fg-title);
+}
+
+h2, h3 {
+  color: var(--fg-title-mini);
+  /* text-decoration: underline; */
 }
 
 .title {
