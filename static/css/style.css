@@ -37,6 +37,7 @@
   --page-main-max-width: 50%;
   --page-main-padding: 0;
   --page-main-position: fixed;
+  --footer-align: left
 }
 
 @media (prefers-color-scheme: dark) {
@@ -62,6 +63,7 @@
     --page-main-max-width: 100%;
     --page-main-padding: 0 5% 5% 5%;
     --page-main-position: relative;
+    --footer-align: center;
   }
 }
 
@@ -124,6 +126,7 @@ footer {
   margin: var(--page-main-margin);
   padding: var(--page-main-padding);
   color: var(--fg-sub);
+  align-self: var(--footer-align);
 }
 
 hr {
@@ -186,7 +189,6 @@ table tbody tr:last-of-type {
 
 h2, h3 {
   color: var(--fg-title-mini);
-  /* text-decoration: underline; */
 }
 
 .title {
