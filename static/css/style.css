@@ -98,6 +98,8 @@ a:hover {
 
 p {
   background-color: inherit;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 p a {
