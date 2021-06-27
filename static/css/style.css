@@ -37,7 +37,8 @@
   --page-main-max-width: 50%;
   --page-main-padding: 0;
   --page-main-position: fixed;
-  --footer-align: left
+  --footer-align: left;
+  --navbar-page-align: left;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -64,6 +65,7 @@
     --page-main-padding: 0 5% 5% 5%;
     --page-main-position: relative;
     --footer-align: center;
+    --navbar-page-align: center;
   }
 }
 
@@ -230,6 +232,10 @@ h2, h3 {
   top: 0;
   left: 0;
   overflow-x: hidden;
+}
+
+.navbar-page {
+  text-align: var(--navbar-page-align);
 }
 
 .page-main {
