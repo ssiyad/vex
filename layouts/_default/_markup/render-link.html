@@ -1,5 +1,0 @@
-<a href="{{ .Destination | safeURL }}" {{ with .Title}} title="{{ . }}" {{ end }}{{ if strings.HasPrefix
-    .Destination "http" }} target="_blank" {{ end }}>{{ .Text }}</a>
-{{ if strings.HasPrefix .Destination "http" }}
-<img src="/svg/external-link.svg">
-{{ end }}
