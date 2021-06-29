@@ -116,16 +116,15 @@ figcaption {
   color: var(--fg-sub);
 }
 
-pre, code {
+code, code * {
   font-family: "Fira Code";
-  color: var(--fg-code);
-  background-color: var(--bg-code);
-  overflow: scroll;
+  font-size: 0.9rem;
+  background-color: inherit;
 }
 
 pre {
   margin: 10px;
-  padding: 10px;
+  background-color: var(--bg-code);
 }
 
 footer {
